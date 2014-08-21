@@ -1,0 +1,66 @@
+@mixin single_transition($prop, $duration){
+    -webkit-transition: $prop $duration;
+    transition: $prop $duration;
+    -moz-transition: $prop $duration;
+}
+
+@mixin shadow($prop){
+    -moz-box-shadow:    $prop;
+    -webkit-box-shadow: $prop;
+    box-shadow:         $prop;
+}
+
+@mixin opacity($value){
+    -moz-opacity: $value;
+    opacity:$value;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$value*100})";
+}
+
+@mixin visuallyhidden(){
+	border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+@mixin rotate ($value, $ievalue){
+	/* Safari */
+	-webkit-transform: rotate($value);
+
+	/* Firefox */
+	-moz-transform: rotate($value);
+
+	/* IE */
+	-ms-transform: rotate($value);
+
+	/* Opera */
+	-o-transform: rotate($value);
+
+	/* Internet Explorer */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$ievalue);
+}
+
+
+@mixin box-sizing{
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+
+@mixin font-size($size, $unit) {
+  @if $unit == rem {
+    font-size: ($size)+0px;
+    font-size: ($size/10)+0rem;
+  }
+  @else if $unit == em {
+    font-size: ($size/10)+0em;
+  }
+  @else if $unit == px {
+    font-size: ($size)+0px;
+  }
+}

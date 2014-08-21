@@ -1,0 +1,557 @@
+/* ==========================================================================
+   Imports
+   ========================================================================== */
+@import 'colours';
+@import 'default';
+@import 'mixins';
+
+@import 'fonts';
+
+/*@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300);
+@import url(http://fonts.googleapis.com/css?family=Cabin:400,500,600,700,400italic,500italic,600italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Hind:400,300,700,600,500);*/
+/* ==========================================================================
+   General
+   ========================================================================== */
+
+html {font-size:62.5%;}
+body{
+    @include font-size(14,rem); 
+    color:#fff;
+    font-family: "Hind";
+}
+
+
+
+a, a:visited { color:#414040; text-decoration:none;}
+a:hover {text-decoration:underline;}
+
+// Styling for table is using Pure CSS table style
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
+  border: 1px solid #016CB6;
+
+  thead {
+  
+    text-align: left;
+    vertical-align: bottom;
+  }
+
+  th,td {
+    border-left: 1px solid #016CB6;
+    border-width: 0 0 0 1px;
+    font-size: inherit;
+    margin: 0;
+    overflow: visible;
+    padding:0.5em 1em;
+
+    &:first-child { border-left-width: 0; }
+  }
+}
+
+blockquote {
+    background:$light_grey;
+    font-style:italic;
+    color:$dark_grey;
+    padding:20px;
+    margin:20px 10px;
+    @include box-sizing;
+}
+
+dt {font-weight:bold;}
+
+ol {
+    ol {
+        list-style-type: lower-latin;
+        ol {
+            list-style-type: lower-roman;
+        }
+    }
+}
+
+ul{
+  padding-left: 0;
+  -webkit-padding-start: 0;
+}
+
+.clearfix:after {
+    content: ".";
+    display: table;
+
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+   
+}
+
+/* ==========================================================================
+   Helper Classes
+   ========================================================================== */
+    
+.wrapper {width:960px; margin:0 auto; height:100%;}
+.col-1-4 {width:25%; float:left;}
+.col-3-4 {width:75%; float:left;}
+.pull-left {float:left;}
+.pull-right {float:right;}
+.list {padding:0; margin:0; list-style-type:none;}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+
+   p.heading{
+    font-family: "Hind";
+    font-weight: 500;
+    font-size: 21px;
+    color: #023456;
+    width:50%;
+    display:inline-block;
+    float:left;
+    margin: 0;
+    height:30px;
+    text-transform: uppercase;
+    left:5px;
+    position:relative;
+   }
+
+   div.search1{
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-weight: 600;
+    display:inline-block;
+    width:50%;
+    float:left;
+    margin: 0;
+    height: 30px;
+    position:relative;
+    input[type=text]{position:absolute;right:85px; font-size: 12px;width: 235px;padding: 2px 5px 3px 5px;}  
+    span.button{position:absolute; right:5px; padding:5px; background:#023456; width:60px; text-align:center;}
+      
+    }
+
+
+
+      div.home-icon{
+        background: url(/assets/img/home.png)no-repeat;
+          width: 0px;
+          height: 0px;
+          padding: 18px;
+      }
+
+
+/* ==========================================================================
+   Main
+   ========================================================================== */
+    ul.link-list li{
+    text-decoration: none;
+    display: inline-block;
+   margin:0 15px;
+
+      a{
+        padding: 55px 67px;
+        border: 1px solid #fff;
+        border-radius: 9999px;
+      
+        
+      }
+   }
+
+  div.link-description{
+    width:100%;    
+    margin-top: 0;
+    padding-top:0;
+    position:relative;
+    top: -3px;
+    font-family: "Hind";
+    color:#fff;
+
+      h1{        
+        display: block;
+        width:75%;
+        text-align: center;
+        margin: auto;
+        font-weight:400;
+        font-size: 30px;
+        position:relative;
+        padding: 30px 0 0 0;
+       
+      }
+      p{
+        font-size:16px;
+        text-align: center;
+        font-weight: 300;       
+        position:relative;
+        
+         width: 60%;
+        display: block;
+        margin:20px auto 38px;
+      }
+
+   }
+
+   
+    ::-webkit-input-placeholder { /* WebKit browsers */
+    font-style: italic;
+      }
+      :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+          font-style: italic;
+          
+      }
+      ::-moz-placeholder { /* Mozilla Firefox 19+ */
+          font-style: italic;
+          
+      }
+      :-ms-input-placeholder { /* Internet Explorer 10+ */
+          font-style: italic;
+      }
+
+
+   a.ami{
+    text-decoration: none;
+    background:url(/assets/img/ami.png)no-repeat;
+   }
+   a.ami:hover{background:url(/assets/img/ami-hover.png)no-repeat;}
+
+   a.cancer{
+    text-decoration: none;
+    background:url(/assets/img/cancer.png)no-repeat;
+   }
+   a.cancer:hover{background:url(/assets/img/cancer-hover.png)no-repeat;}
+
+   a.kidney{
+    text-decoration: none;
+    background:url(/assets/img/kidney.png)no-repeat;
+   }
+   a.kidney:hover{background:url(/assets/img/kidney-hover.png)no-repeat;}
+
+   a.trauma{
+    text-decoration: none;
+    background:url(/assets/img/trauma.png)no-repeat;
+   }
+   a.trauma:hover{background:url(/assets/img/trauma-hover.png)no-repeat;}
+
+   a.stroke{
+    text-decoration: none;
+    background:url(/assets/img/stroke.png)no-repeat;
+   }
+   a.stroke:hover{background:url(/assets/img/stroke-hover.png)no-repeat;}
+
+   a.donor{
+    text-decoration: none;
+    background:url(/assets/img/donor.png)no-repeat;
+   }
+   a.donor:hover{background:url(/assets/img/donor-hover.png)no-repeat;}
+
+   a.birth{
+    text-decoration: none;
+    background:url(/assets/img/birth.png)no-repeat;
+   }
+   a.birth:hover{background:url(/assets/img/birth-hover.png)no-repeat;}
+
+   div.container{
+    display:block;
+    position:relative;
+   margin-bottom: 45px;
+   }
+
+   h2.main-heading{ 
+   position:relative;
+                
+         font-size: 30px;
+        font-weight: 500;
+        color: #000;
+        margin: 20px 0 25px 5px;
+        span{
+            border-bottom: 5px solid #FBC036; 
+        }
+    }
+
+   section.left-container{ 
+    font-family: "Hind";
+
+    article.publication{
+            
+            position:relative;
+            font-family: "Hind";
+            background: #f1f1f1;
+            float: left;
+              p{color:#706F73;
+                
+                font-weight: 400;
+                }
+              h2{
+                  font-size: 30px;
+                  font-weight: 600;
+                  color: #000;
+                }
+              h3{padding:0 10px;
+                color:#000;
+                font-size: 16px;
+                font-weight:600;
+                }  
+              a{padding:10px;
+                font-size: 14px;
+                color: #226E9F;
+                font-weight:600;
+
+                    img{
+                      position:relative;
+                      margin-left:8px;
+                      
+                    }
+                }
+   }
+            div.view-more{
+              width:99%;
+              background:#023456;
+              position:relative;
+              display: inline-block;
+              min-height: 50px;
+              border-radius: 5px;
+              margin-top: 20px;
+              a{
+                position: absolute;
+                
+                  top: 28%;
+                  color: #fff;
+                  font-size: 14px;
+                  font-weight: 600;
+                  text-decoration: none;
+                  text-align: center;
+                  width: 100%;
+
+                img{
+                  margin-left: 7px;
+                  bottom: 2px;
+                  position: relative;
+
+                }
+              }
+            }
+ }
+
+ div.main-body{position:relative;min-height:770px;}
+
+ section.right-container{ 
+  font-family: "Hind";
+      article.side-content{
+        display: block;
+      
+        margin:0 auto;
+        position:relative;
+
+       div.side-data{ 
+        position:absolute;
+                top:20px;
+              h3.side-heading{
+               
+                font-weight:400;
+                color: #000;
+                position:relative;
+                
+              }
+              p{
+                
+                font-weight:300;
+                
+                color:#414040;
+                position:relative;
+              }
+              
+
+              div.track{
+                position:relative;
+                
+                width: 80%;
+                background: #fff;
+                border-radius:7px;
+                
+               
+                  input[type=text]{
+                    outline: none;
+                    padding: 0 10px;
+                    border: none;
+                    border-top-left-radius: 7px;
+                    border-bottom-left-radius: 7px;
+                    width: 130px;
+                    height: 100%;
+                    position: relative;
+                  }
+                  a{
+                    background: url(/assets/img/button-arrow.png) #fbc036 50% 50% no-repeat;
+                    
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    // border: 1px solid #FBC036; 
+                    border-top-right-radius: 7px;
+                    border-bottom-right-radius: 7px;
+                    height: 100%;
+                  }
+
+              }
+
+        }
+      }
+ }
+
+span.side-button{
+                background:url(/assets/img/button-arrow.png) #FBC036 95% 48% no-repeat;
+                a{color:#023456;
+                font-weight: 600;
+                text-decoration: none;}
+                
+                border:1px solid #FBC036;
+                border-radius:7px;
+                cursor: pointer;
+              }
+
+
+  /*===========================================================================
+                                   Publication
+   ========================================================================== */
+
+
+section.publication-section{
+ display: block;
+position: relative; 
+      min-height: 400px;
+      color: #023456;
+}
+
+section.publication-section:nth-of-type(odd){
+  background: #EBEBEB;
+}
+
+
+
+article.publi-left{
+  padding: 30px 0 15px 0; 
+
+  
+ 
+
+}
+
+
+
+
+article.publi-right{
+  padding: 30px 0;
+  
+  img{display:block;
+    position:relative;
+          top:-7px;}
+ 
+    h2,h3{
+      font-size: 24px;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    h3{
+      position:relative;
+      margin-top: 22px;
+      left:20px;
+      width: 385px;
+      margin-bottom: 25px;
+    }
+    div.publi-date{
+      float: left;
+      margin-top: 7px;
+        span{
+          font-size: 48px;
+          font-weight: 400;
+          position:relative;
+          top: -9px;
+
+        }
+    }
+
+    p{
+      font-size: 14px;
+      font-weight: 500;
+      color: #000;
+      padding: 0 50px 0 0;
+      text-align: justify;
+    }
+
+    p.declaration{
+      font-size: 12px;
+      font-style:italic;
+      a{text-decoration:none;
+        font-weight: bold;}
+      margin-bottom: 22px;  
+    }
+
+    span.side-button{
+    margin: 0 30px 7px 0;
+  }
+}
+
+/* ==========================================================================
+   data-request
+   ========================================================================== */
+
+.data-req{
+position:relative;
+display:block;
+font-size: 24px;
+font-weight: 600;
+color: #8F8F8F;
+
+ ::-webkit-input-placeholder { /* WebKit browsers */
+    font-size: 14px;
+    font-style: normal;
+      }
+      :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+          font-size: 14px;
+          font-style: normal;
+          
+      }
+      ::-moz-placeholder { /* Mozilla Firefox 19+ */
+          font-size: 14px;
+          font-style: normal;
+          
+      }
+      :-ms-input-placeholder { /* Internet Explorer 10+ */
+          font-size: 14px;
+          font-style: normal;
+      }
+
+      input{color: #8F8F8F;}
+}
+
+/* ==========================================================================
+   bxSlider
+   ========================================================================== */
+.bx-controls-direction a {
+position: absolute;
+outline: 0;
+width: 32px;
+height: 32px;
+text-indent: -9999px;
+z-index: 100000;
+
+}
+
+.bx-next {
+background: url(/assets/img/car-right.png) no-repeat 0 -5px !important;
+}
+
+.bx-prev {
+background: url(/assets/img/car-left.png) no-repeat 0 -5px !important;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
