@@ -59,7 +59,8 @@
         
         <script src="/assets/js/main.js"></script>
         <script src="/assets/js/plugins.js"></script>
-      <script src="/assets/js/jquery.bxslider.min.js"></script>
+        <script src="/assets/js/jquery.bxslider.min.js"></script>
+        
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

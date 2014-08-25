@@ -69,8 +69,7 @@
                                                          <li class='last'><a href='#'><span>Trauma</span></a></li>
                                                       </ul>
                                             </li>
-                                            <li  class="<?php if($primary==4){ echo 'active';} ?>"><a href="/data request/">Data Request</a></li>
-                                            <li><a href="#">Data Enquiry</a></li>
+                                            <li  class="<?php if($primary==4){ echo 'active';} ?>"><a href="#">Legislation</a></li>                                            
                                             <li><a href="#" class="has-sub">Diseases Notification</a>
                                                       <ul class="inner-list">
                                                          <li><a href='#'><span>Acute Myocardial Infarction Notification</span></a></li>
@@ -78,7 +77,8 @@
                                                          <li><a href='#'><span>Chronic Kidney Failure Notification</span></a></li>
                                                          <li class='last'><a href='#'><span>Donor Care Registry Notification</span></a></li>
                                                       </ul>
-                                            </li>          
+                                            </li>  
+                                            <li class="<?php if($primary==6){ echo 'active';} ?>"><a href="#">Data Request</a></li>        
                                     </ul>  
                       </div>                 
             </nav>

@@ -18,10 +18,10 @@ body{
 ====================================================================================*/
 header{min-height:186px;}
     
- 
+ div.container{margin-bottom: 45px;}
 
     nav.primary-nav{
-      background:#F9F9F9;
+      background:#f1f1f1;
       min-height: 45px;
      // background: grey;
       position:relative;
@@ -49,8 +49,8 @@ header{min-height:186px;}
                 li{
                   display: block;
                   float: none;
-                 margin: 10px;
-                 padding: 5px 20px;
+                 margin: 10px 0;
+                 padding: 10px 20px;
                   a{
                     color: #fff;
                     top:0;
@@ -59,9 +59,9 @@ header{min-height:186px;}
                 }
 
                 li:hover{
-                  background: #FBC036;
+                  background: $dark_yellow;
                   a{
-                    color: #023456;                    
+                    color: $dark_blue;                    
                   }
                 }
             }
@@ -88,6 +88,7 @@ header{min-height:186px;}
               position: relative;
               height: 100%;
               float: left;
+              font-size: 16px;
                   a{text-decoration:none;
                   position: relative;
                   top: 11px;
@@ -136,7 +137,7 @@ ul.link-list{
    }
 
    ul.link-list li{
-   margin: 49px 30px 0 0;  
+   margin: 49px 28px 0 0;  
    }
 
 
@@ -196,7 +197,7 @@ a.mobile-search-button{display:none;}
 
 
 .active{
-  background:#023456;
+  background:$dark_blue;
   a{color:#fff;}
 }
 
@@ -308,7 +309,7 @@ padding-left:5px;
     margin-top:2px;
     margin-left: 5px;
     li{display:inline-block;font-weight:400;}
-    span.current{color:#023456; font-weight:600;}
+    span.current{color:$dark_blue; font-weight:600;}
   }
   ul.breadcrumb li+li:before {
          content:">";
@@ -355,10 +356,18 @@ padding-left:5px;
        margin-bottom: 0;
        width:220px;
        border:none;
-       outline:none;
-      
-       background: url(/assets/img/publi-search.png) 100% 75% no-repeat;
-       padding: 8px 50px 0 0;
+       outline:none; 
+       background: none;
+              padding: 8px 50px 0 0;
+      }
+
+      a.search-link{
+        background: url(/assets/img/publi-search.png) 100% 75% no-repeat;
+        padding:17px;
+        position: absolute;
+        right: 7px;
+        top: 3px;
+
       }
       span{
         border-top: 1px solid #205372;
@@ -369,6 +378,13 @@ padding-left:5px;
       }
    }   
 
+  }
+
+  div.view-more:hover{
+    background: $dark_yellow !important;
+    a{color: $dark_blue !important; 
+   //   img{background:url(/assets/img/button-arrow.png) no-repeat;}
+    }
   }
 /*====================================================================================
 										HEADER
@@ -414,15 +430,16 @@ article.publi-enquiry{
 }
 
 
+
 span.side-button:hover{
-  background: url(/assets/img/button-arrow-hover.png) #023456 89% 48% no-repeat !important;
-  border: 1px solid #023456 !important;
+  background: url(/assets/img/button-arrow-hover.png) $dark_blue 89% 48% no-repeat !important;
+  border: 1px solid $dark_blue !important;
   a{color: #fff !important;}
 }  
 
 
               div.track a:hover{
-                    background: url(/assets/img/button-arrow-hover.png) #023456 50% 50% no-repeat !important;
+                    background: url(/assets/img/button-arrow-hover.png) $dark_blue 50% 50% no-repeat !important;
                   }
 
 /*====================================================================================
@@ -440,7 +457,7 @@ position: relative;
 }
 
 div.bx-viewport{
-  height: 136px !important;
+  height: 146px !important;
 }
 
 .bx-controls-direction a {
@@ -569,34 +586,62 @@ margin-top: -16px;
 }
 
 div.data-row{
-padding: 40px 0 40px 5px;
-border-bottom:1px solid #8F8F8F;
+padding: 20px 0 18px 5px;
+border-bottom:1px solid #CFCFCF;
 
 
 p{
   margin:0; 
-  width:33.33%;
+  width:34.8%;
   display:inline-block; 
   float:left;
   position:relative;
   }
 
 
-span{
-  width: 66.66%; 
+div{
+  width: 64.5%; 
   display:inline-block;
   position:relative;
 font-size:14px;
-        input{
-          width: 62.5%
+        input[type=text],select,textarea{
+          width: 64%;
         }
 
+        
   }
 }
 
+div.checkbox-data{
+          width:64% !important;
+          label{
+            display: inline-block;
+            margin: 0 30px 40px 0;
+            width: 170px;
+            position: relative;
+
+              p{float: right;
+                  width: 123px;}
+              }
+        }
+
+
+
+  .city-left,div.zip,.zip-left{float:left;margin-right: 10px;}
+
+.zip{
+  width: 125px !important;
+  select,span.dropdown-span{width: 100% !important; margin-bottom: 0;}
+  }
+
+ span.dropdown-span{width: 64%;}  
+
+input.surname{width:110px !important; margin-right:20px;}
+input.givenname{width:270px !important;}
+
 
 article.personal-particular{
-  margin-bottom: 45px;
+  margin-bottom: 30px;
 }
 
 article.data-inquiry{

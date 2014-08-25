@@ -287,6 +287,43 @@ article.publi-enquiry,div.publi-search{
 /*====================================================================================
 										MAIN BODY
 ====================================================================================*/
+/*====================================================================================
+										DATA ENQUIRY
+====================================================================================*/
+div.data-row{
+	padding: 35px 0;
+	margin: 0 20px;
+	border-bottom:1px solid #8F8F8F;
+}
+
+.data-req input[type=text], .data-req select, .data-req textarea,span.dropdown-span{
+	width:100%;
+}
+
+input.zip-right{
+	width:100%;
+}
+
+input.zip.city-left,div.zip {
+	width:48%;
+	display:inline-block;
+	float:left;
+}
+
+input.zip.city-left{
+	margin-right: 4%;
+}
+
+div.checkbox-data{
+	label{position:relative;}
+	p{
+		position: relative;
+		left: 50px;
+		bottom: 19px;
+		margin: 0;
+		width: 80%;
+	}
+}
 
 /*====================================================================================
 										BxSLideer
