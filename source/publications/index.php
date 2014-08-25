@@ -13,7 +13,7 @@
 
                  <h1>Publications</h1>
                     <p>Fusce ultrices rutrum velit eget feugiat. Quisque nisl magna, vehicula et lacus sed, tempus tincidunt nunc. </p>
-                    <div class="publi-search"><input type="text" placeholder="Search our Publications" /><span>Type for tags, topics, etc.</span> </div>
+                    <div class="publi-search"><input type="text" placeholder="Search our Publications" /><a href="#" class="search-link"></a><span>Type for tags, topics, etc.</span> </div>
                     
             </div>
         </div>            
