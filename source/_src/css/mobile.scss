@@ -130,6 +130,7 @@ ul.nav-bar li.home-image{display:none }
 										MAIN BODY
 ====================================================================================*/
 
+.desktop-slider{display:none;}
 div.breadcrumb-block{display:none;}
 ul.link-list{
     -webkit-padding-start: 0;
@@ -150,7 +151,7 @@ h2.main-heading{
 	}
    ul.link-list li{
     
-   margin: 18px 11px 0 11px;
+   margin: 42px -1.39% 0 2.89%;
    height: 145px;   
    }
 
@@ -165,34 +166,42 @@ div.link-description {
 
 div.main-links {
 margin-top: 20px;
-
+height: 210px;
 position: relative;
 display: block;
 }
 
+.right-container .side-content{
+	.side-data .side-button{
+		margin-left: 20px !important;
+	}
+}
 
-
-article.side-content{
+.side-content{
 	max-width:100%;
+	display:block;
 	img{width:100%;}
 }
 
-div.side-data{
-	h3.side-heading{margin: 15px 20px 10px 20px; font-size:30px; }
+.side-data{
+	.side-heading{margin: 15px 20px 10px 20px; font-size:30px; }
 	p{margin:0 20px 15px 20px; font-size:20px; }
 	
-     div.track{
+     .track{
           margin:30px 20px 7px 20px;
           height:39px; 
           a{padding: 0px 25px;}
           }   
 }
 
-section.left-container{
-	article.publication{
+
+
+.left-container{
+	.publication{
 		display: block;
 		width:100%;
 		margin:0 0 15px 0;
+		min-height: 250px;
 			p{margin:5px 20px 15px 20px; font-size:16px;padding: 0px 10px;}
            h3{margin:20px 20px 10px 20px; font-size:20px;}
            a{margin:5px 20px 7px 20px; display: block;}
@@ -208,10 +217,10 @@ section.left-container{
 
 span.side-button{
           a{
-            font-size: 20px;
+            font-size: 16px;
           }
-          padding:9px 35px 5px 15px;
-            margin: 15px 20px 7px 20px;
+          padding:7px 25px 4px 10px;
+            margin: 15px 10 7px 0 !important;
         }
 
     
@@ -230,7 +239,7 @@ section.publication-section{
 
 article.publi-left{
 	img{
-	max-width: 320px;
+	max-width: 85%;
 display: block;
 margin: 0 30px;}
 }
@@ -244,7 +253,7 @@ div.publication-description{
 	}
 
 	p{
-		width:90%;
+		width:80%;
 		margin-left: 20px;
 		text-align: left;
 	}
@@ -253,9 +262,13 @@ div.publication-description{
 }
 
 article.publi-right{
+	box-sizing: border-box;
+	padding: 30px !important;
 	img, div.publi-date, p{
-		padding-left:30px;
+		padding-right:0
 	}
+
+
 	
 	div.publi-date{h2{margin-bottom: 5px;}
 		span{}
@@ -270,18 +283,22 @@ article.publi-right{
 		margin-bottom:22px;
 	}
 
-	p{padding-right:20px; font-size: 16px; }
+	p{padding-right:0; font-size: 16px; }
 	p.declaration{
 		font-size: 14px;
 		}
 
 	div.publi-button{
-		padding-left:30px;
+		padding-right:0
 	}
 }
 
 article.publi-enquiry,div.publi-search{
 	display:none;
+}
+
+.searchbox{
+	display:none !important;
 }
 
 /*====================================================================================
@@ -291,9 +308,9 @@ article.publi-enquiry,div.publi-search{
 										DATA ENQUIRY
 ====================================================================================*/
 div.data-row{
-	padding: 35px 0;
+	padding: 20px 0 18px 5px;
 	margin: 0 20px;
-	border-bottom:1px solid #8F8F8F;
+	border-bottom:1px solid #DFDFDF;
 }
 
 .data-req input[type=text], .data-req select, .data-req textarea,span.dropdown-span{
@@ -325,6 +342,8 @@ div.checkbox-data{
 	}
 }
 
+.mobile-number{width:75% !important;}
+
 /*====================================================================================
 										BxSLideer
 ====================================================================================*/
@@ -338,17 +357,15 @@ margin-top:0;
 
 .bx-prev {left: 30% !important; }
 
-.bx-viewport{
-	height:520px !important;
-}
+
 
 /*====================================================================================
 										FOOTER
 ====================================================================================*/
 footer{
-	div.wrapper{
-		section.disease-links,section.foot-links,section.publication-links{display:none;}
-		section.footer-logo{
+	.wrapper{
+		.disease-links,.foot-links,.publication-links{display:none;}
+		.footer-logo{
 				margin: 10px 20px 5px 20px;
 				display: block;
 
@@ -361,32 +378,65 @@ footer{
 					}
 		}
 
-		section.terms-links{
-			margin: 20px 0 15px 0;
+		.terms-links{
+			margin: 20px auto 15px;
 			font-family: "Hind";
 			font-size: 14px;
 			color:#706F73;
+			width:80%;
 			
-			p.link-title{
+			.link-title{
 				font-weight:600;
-				display: block;
+				display:inline-block;
 				width:50%;
 				position:relative;
 				box-sizing:border-box;
-				text-align: center;
+				padding: 0 5px;
 				margin: 0 auto 10px;
 			 }
 
+			 .left{text-align:left;}
+			 .right{text-align:right; border-right: 1px solid #8F8F8F;}
 		
 		}
 
-		p.copyright{
+		.copyright{
 				font-weight:400; 
 				color:#000;
 				text-align:center; 
-				text-transform:uppercase;
+				text-transform:normal;
 				width: 248px;
 				margin: 0 auto 5px;
 				}
 	}
 }
+
+
+
+/*====================================================================================
+										AMI
+====================================================================================*/
+.data-publi .data, .data-publi .date, .data-publi .type {
+margin: 20px 0 0 0;
+padding: 0 20px 0 30px;
+}
+
+.data-publi .ami-content{
+	display:none;
+}
+
+.pdf, .disclaimer {
+		p{
+		padding: 0 15px;
+		text-align: center;
+		span{padding:0;}
+
+		
+	}
+}
+/* ==========================================================================
+   About Us
+   ========================================================================== */
+
+   .about-left{display:none;}
+   .about-right{ margin: 0 15px 10px;}

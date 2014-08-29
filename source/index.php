@@ -11,23 +11,45 @@
        
         
             <div class="wrapper">
-                    <h1>Welcome to National Registry of Diseases Office</h1>
+                    <h1 class="main-header">Welcome to National Registry of Diseases Office</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et fringilla dolor. Ut mattis posuere nibh, vitae consectetur sem laoreet at. </p>
                     <div class="main-links">
-                                <ul class="link-list bxslider">
-                                    <div>
-                                        <li  ><a href="#" class="ami"></a></li>
-                                        <li><a href="#" class="cancer"></a></li>
-                                        <li><a href="#" class="kidney"></a></li>
-                                        <li><a href="#" class="stroke"></a></li>
-                                        <li class="mobile-center"><a href="#" class="trauma"></a></li>
+                                <ul class="link-list  desktop-slider">
+                                    <div class="slide-div">
+                                        <li><a href="#" class="ami" name="Singapore Myocardial Infarction Registry"></a></li>
+                                        <li><a href="#" class="cancer" name="Singapore Cancer Registry "></a></li>
+                                      
+                                        <li><a href="#" class="kidney" name="Singapore Renal Registry"></a></li>
+                                        <li><a href="#" class="stroke" name="Singapore Stroke Registry "></a></li>
+                                    
+                                        <li class="mobile-center"><a href="#" class="trauma" name="National Trauma Registry "></a></li>
                                     </div>
-                                    <div>    
-                                        <li><a href="#" class="donor"></a></li>
-                                        <li><a href="#" class="birth"></a></li>
-                                    </div>    
+                                    <div class="slide-div">    
+                                        <li><a href="#" class="donor" name="Donor Care Registry"></a></li>
+                                        <li><a href="#" class="birth" name="National Birth Defects Registry "></a></li>
+                                    </div> 
+                                </ul>
 
+                                <ul class="link-list mobile-slider">                                   
+                                        <li><a href="#" class="ami" name="Singapore Myocardial Infarction Registry"></a></li>
+                                        <li><a href="#" class="cancer" name="Singapore Cancer Registry "></a></li> 
+                                    <!-- </div>
+                                    <div class="slide-div">  -->                                    
+                                        <li><a href="#" class="kidney" name="Singapore Renal Registry"></a></li>
+                                        <li><a href="#" class="stroke" name="Singapore Stroke Registry "></a></li>                                    
+                                   <!--  </div>
+                                    <div class="slide-div"> -->
+                                        <li><a href="#" class="trauma" name="National Trauma Registry "></a></li>
+                                        <li><a href="#" class="donor" name="Donor Care Registry"></a></li>
+                                    <!-- </div>
+                                    <div class="slide-div"> -->
+                                        <li><a href="#" class="birth" name="National Birth Defects Registry "></a></li>
+                                        <li></li>
+                                    
+                                    
                                 </ul>  
+                                 
+                                 
 
 
                                 
@@ -45,7 +67,7 @@
                                                 <div class="side-data">
                                                     <h3 class="side-heading">Data Enquiry Form</h3>
                                                     <p>Vivamus condimentum gravida orci, a tinci dunt mau ris hendre rit at. </p>
-                                                    <span class="side-button"> <a href="/data enquiry/">Enquire</a></span>
+                                                    <span class="side-button"> <a href="/data_enquiry/">Enquire</a></span>
                                                 </div>
                                             </article>
                                             <article class="side-content">
@@ -59,7 +81,7 @@
                                             <article class="side-content">
                                                 <img src="assets/img/disease-n.png" alt="Disease Notification">
                                                 <div class="side-data">
-                                                    <h3 class="side-heading">Disease <br />e-Notification Login.</h3>
+                                                    <h3 class="side-heading">Disease <br />e-Notification Login</h3>
                                                     <p>Vivamus condimentum gravida orci, a tinci dunt mau ris hendre rit at. </p>
                                                     <span class="side-button"><a href="#">Login Now</a></span>
                                                 </div>
@@ -67,11 +89,10 @@
                                             <article class="side-content">
                                                 <img src="assets/img/health-p.png" alt="Health Portal">
                                                 <div class="side-data">
-                                                    <h3 class="side-heading">Health professional portal login.</h3>
+                                                    <h3 class="side-heading">Health Professional Portal Login</h3>
                                                     <p>Vivamus condimentum gravida orci, a tinci dunt mau ris hendre rit at. </p>
                                                     <span class="side-button"><a href="#">Login Now</a></span>
                                                 </div>
-
                                             </article>
                                     </section>
 
@@ -113,7 +134,7 @@
                                                 <a href="#">Download <img src="/assets/img/arrow-publi.png" alt="arrow" /></a>
                                        </article>
 
-                                       <div class="view-more"><a href="#">View More Publications<img src="/assets/img/arrow-more.png" alt="arrow-more" /></a></div> 
+                                       <div class="view-more"><a href="/publications/">View More Publications</a></div> 
 
                                     </section>   
 

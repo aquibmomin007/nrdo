@@ -291,13 +291,14 @@ ul {
   font-size: 21px;
   color: #023456;
   width: 50%;
-  display: inline-block;
   float: left;
   margin: 0;
   height: 30px;
   text-transform: uppercase;
   left: 5px;
   position: relative; }
+  .heading a {
+    text-decoration: none; }
 
 .search1 {
   font-family: "Open Sans";
@@ -321,7 +322,8 @@ ul {
     padding: 5px;
     background: #023456;
     width: 60px;
-    text-align: center; }
+    text-align: center;
+    cursor: pointer; }
 
 .home-icon {
   background: url(/assets/img/home.png) no-repeat;
@@ -360,13 +362,13 @@ ul {
     position: relative;
     padding: 30px 0 0 0; }
   .link-description p {
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
     font-weight: 300;
     position: relative;
     width: 60%;
     display: block;
-    margin: 20px auto 25px; }
+    margin: 8px auto 22px; }
 
 ::-webkit-input-placeholder {
   /* WebKit browsers */
@@ -428,7 +430,7 @@ ul {
   font-size: 30px;
   font-weight: 500;
   color: #000;
-  margin: 20px 0 25px 5px; }
+  margin: 9px 0 17px 5px; }
   .main-heading span {
     border-bottom: 5px solid #fbc036; }
 
@@ -455,32 +457,35 @@ ul {
       padding: 10px;
       font-size: 14px;
       color: #226E9F;
-      font-weight: 600; }
+      font-weight: 600;
+      position: absolute;
+      bottom: 3px; }
       .left-container .publication a img {
         position: relative;
         margin-left: 8px; }
-  .left-container .view-more {
-    width: 98%;
-    background: #023456;
+
+.view-more {
+  width: 98%;
+  background: #023456;
+  position: relative;
+  display: inline-block;
+  min-height: 50px;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-left: 5px; }
+  .view-more a {
     position: relative;
-    display: inline-block;
-    min-height: 50px;
-    border-radius: 5px;
-    margin-top: 20px;
-    margin-left: 5px; }
-    .left-container .view-more a {
-      position: absolute;
-      top: 28%;
-      color: #fff;
-      font-size: 14px;
-      font-weight: 600;
-      text-decoration: none;
-      text-align: center;
-      width: 100%; }
-      .left-container .view-more a img {
-        margin-left: 7px;
-        bottom: 2px;
-        position: relative; }
+    background: url(/assets/img/arrow-more.png) 94% 50% no-repeat;
+    top: 28%;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    /* text-align: center; */
+    width: 187px;
+    padding: 1px 0;
+    display: block;
+    margin: 20px auto; }
 
 .main-body {
   position: relative;
@@ -488,43 +493,44 @@ ul {
 
 .right-container {
   font-family: "Hind"; }
-  .right-container .side-content {
-    display: block;
-    margin: 0 auto;
-    position: relative; }
-    .right-container .side-content .side-data {
-      position: absolute;
-      top: 20px; }
-      .right-container .side-content .side-data .side-heading {
-        font-weight: 400;
-        color: #000;
+
+.side-content {
+  display: inline-block;
+  margin: 0 auto;
+  position: relative; }
+  .side-content .side-data {
+    position: absolute;
+    top: 20px; }
+    .side-content .side-data .side-heading {
+      font-weight: 400;
+      color: #000;
+      position: relative; }
+    .side-content .side-data p {
+      font-weight: 300;
+      color: #414040;
+      position: relative; }
+    .side-content .side-data .track {
+      position: relative;
+      width: 80%;
+      background: #fff;
+      border-radius: 7px; }
+      .side-content .side-data .track input[type=text] {
+        outline: none;
+        padding: 0 10px;
+        border: none;
+        border-top-left-radius: 7px;
+        border-bottom-left-radius: 7px;
+        width: 130px;
+        height: 100%;
         position: relative; }
-      .right-container .side-content .side-data p {
-        font-weight: 300;
-        color: #414040;
-        position: relative; }
-      .right-container .side-content .side-data .track {
-        position: relative;
-        width: 80%;
-        background: #fff;
-        border-radius: 7px; }
-        .right-container .side-content .side-data .track input[type=text] {
-          outline: none;
-          padding: 0 10px;
-          border: none;
-          border-top-left-radius: 7px;
-          border-bottom-left-radius: 7px;
-          width: 130px;
-          height: 100%;
-          position: relative; }
-        .right-container .side-content .side-data .track a {
-          background: url(/assets/img/button-arrow.png) #fbc036 50% 50% no-repeat;
-          position: absolute;
-          right: 0;
-          top: 0;
-          border-top-right-radius: 7px;
-          border-bottom-right-radius: 7px;
-          height: 100%; }
+      .side-content .side-data .track a {
+        background: url(/assets/img/button-arrow.png) #fbc036 50% 50% no-repeat;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border-top-right-radius: 7px;
+        border-bottom-right-radius: 7px;
+        height: 100%; }
 
 .side-button {
   background: url(/assets/img/button-arrow.png) #fbc036 95% 48% no-repeat;
@@ -536,9 +542,16 @@ ul {
     font-weight: 600;
     text-decoration: none; }
 
+.download {
+  background: url(/assets/img/button-down-arrow.png) #fbc036 95% 48% no-repeat !important; }
+
 /*===========================================================================
                                  Publication
  ========================================================================== */
+.searchbox {
+  display: none;
+  color: #fff; }
+
 .publication-section {
   display: block;
   position: relative;
@@ -550,6 +563,19 @@ ul {
 
 .publi-left {
   padding: 30px 0 15px 0; }
+
+.tag {
+  height: 30px;
+  background: url(/assets/img/ami-tag.png) 0% 50% no-repeat; }
+  .tag span {
+    height: 25px;
+    margin: 0 0 0 26px !important;
+    background: #fbc036;
+    padding: 5px 15px 0px 3px;
+    float: left;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    font: 600 14px "Hind"; }
 
 .publi-right {
   padding: 30px 0; }
@@ -581,19 +607,48 @@ ul {
     color: #000;
     padding: 0 50px 0 0;
     text-align: justify; }
-  .publi-right .declaration {
-    font-size: 12px;
-    font-style: italic;
-    margin-bottom: 22px; }
-    .publi-right .declaration a {
-      text-decoration: none;
-      font-weight: bold; }
   .publi-right .side-button {
     margin: 0 30px 7px 0; }
 
+.declaration {
+  font-size: 12px !important;
+  font-style: italic;
+  margin-bottom: 22px; }
+  .declaration a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #226e9f; }
+    .declaration a:hover {
+      text-decoration: underline; }
+
 /* ==========================================================================
-   data-request
+   data-enquiry
    ========================================================================== */
+.pdf {
+  background: #414040; }
+  .pdf p {
+    margin: 0; }
+  .pdf img {
+    padding: 10px 0; }
+  .pdf span {
+    color: #fff;
+    font: 400 italic 14px "Hind";
+    padding-left: 20px; }
+
+.disclaimer {
+  background: #f7f7f7; }
+  .disclaimer p {
+    margin: 0; }
+  .disclaimer img {
+    padding: 10px 0; }
+  .disclaimer span {
+    color: #706f73;
+    font: 400 italic 14px "Hind";
+    padding-left: 20px; }
+  .disclaimer a {
+    color: #023456;
+    font-weight: 500; }
+
 .data-req {
   position: relative;
   display: block;
@@ -671,7 +726,7 @@ ul {
 .data-row .invalid-email {
   float: none;
   display: none;
-  font-size: 12px;
+  font-size: 14px;
   color: #FF0000;
   bottom: 12px; }
 
@@ -728,9 +783,15 @@ input[type=file] {
   font-size: 14px;
   cursor: pointer; }
 
+.mobile-number {
+  width: 35% !important; }
+
+.phone-code {
+  margin-right: 20px; }
+
 /* ==========================================================================
-   bxSlider
-   ========================================================================== */
+ bxSlider
+ ========================================================================== */
 .bx-controls-direction a {
   position: absolute;
   outline: 0;
@@ -745,6 +806,74 @@ input[type=file] {
 .bx-prev {
   background: url(/assets/img/car-left.png) no-repeat 0 -5px !important; }
 
-/* ==========================================================================
-   Footer
+/*===========================================================================
+                                   AMI
    ========================================================================== */
+.data-publi {
+  color: #414040;
+  margin-bottom: 20px; }
+  .data-publi .data, .data-publi .date, .data-publi .type {
+    margin: 20px 0 0 0; }
+  .data-publi .publi-content {
+    border-bottom: 1px solid #EBEBEB; }
+  .data-publi .date p {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0; }
+  .data-publi .date span {
+    font-size: 48px; }
+  .data-publi .data h3 {
+    font-size: 21px;
+    font-weight: 600;
+    margin: 0; }
+  .data-publi .data p {
+    color: #706f73; }
+  .data-publi .type {
+    padding-left: 30px; }
+    .data-publi .type p {
+      font-size: 14px;
+      color: #706f73;
+      margin: 0 0 10px 0; }
+    .data-publi .type span {
+      color: #010101;
+      font-weight: 600; }
+    .data-publi .type .publi-button {
+      padding-top: 30px; }
+    .data-publi .type .side-button {
+      margin: 0; }
+
+/* ==========================================================================
+   About Us
+   ========================================================================== */
+.about-left, .about-right {
+  float: left;
+  box-sizing: border-box; }
+
+.about-right ul {
+  padding-left: 17px;
+  margin: 0; }
+.about-right p, .about-right li {
+  color: #706f73;
+  font: 400 14.08px "Hind";
+  padding: 0; }
+.about-right .about-main h2 {
+  color: #023456;
+  font: 600 30px "Hind";
+  margin: 13px 0 0 0; }
+.about-right .about-main h3 {
+  color: #414040;
+  font: 600 21px "Hind";
+  margin: 13px 0 0 0; }
+.about-right .about-main img {
+  width: 100%;
+  margin-top: 7px;
+  margin-bottom: 10px; }
+.about-right .about-main p {
+  font-size: 14px;
+  text-align: justify;
+  margin: 0;
+  padding: 10px 0; }
+
+/* ==========================================================================
+Footer
+========================================================================== */
