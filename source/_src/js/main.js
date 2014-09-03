@@ -3,28 +3,22 @@ $(function(){
 				MOBILE MENU
 ==================================================*/
 $('span.menu-button').click(function(){
-	
 	var menuButton = $(this);
 	var navBar = $('ul.nav-bar');
 	navBar.slideToggle('normal', function(){
-
 		if($(this).is(':visible')){
 			menuButton.text('Close');
 			//menuMobile();
-
 		} else {
 			menuButton.text('Menu');
 			//menuMobile();			
 		}
 	});
-
 });
 
 	//function menuMobile(){
 
-	var mobileLink = $('.primary-nav > .wrapper > ul > li > a');
-
-
+var mobileLink = $('.primary-nav').find('.menu-link');
 if ($(window).width() < 580){
 	mobileLink.click(function() {
 		$('.primary-nav li').removeClass('active-mobile');
@@ -42,8 +36,7 @@ if ($(window).width() < 580){
 		}
 		if($(this).closest('li').find('ul').children().length === 0)return true;
 		else														return false;	
-});
-
+	});
 }
 //}
 
@@ -56,14 +49,13 @@ if ($(window).width() < 580){
 ==================================================*/
 var desktopSlider = $('.link-description').find('.desktop-slider');
 var mobileSlider = $('.link-description').find('.mobile-slider');
-
 if ($(window).width() < 580){
 	desktopSlider.removeClass('bxSlider');
 	desktopSlider.hide();
 	mobileSlider.addClass('bxSlider');
 	mobileSlider.show();
 	mobileSlider.bxSlider({
-		infiniteLoop:false,
+		infiniteLoop:true,
 		adaptiveHeight: true,
 		pager: false,
 		slideWidth: 138,
@@ -79,7 +71,7 @@ if ($(window).width() < 580){
 	desktopSlider.addClass('bxSlider');
 	desktopSlider.show();
 	desktopSlider.bxSlider({
-		infiniteLoop:false,
+		infiniteLoop:true,
 		adaptiveHeight: true,
 		pager: false,
 		slideHeight:138,
@@ -88,50 +80,98 @@ if ($(window).width() < 580){
 		hideControlOnEnd: true,
 		moveSlides: 5
 	});
-
-
 }
 /*==================================================
-				bxSlider
+				Auto-Hover
 ==================================================*/
-/*==================================================
-				Phone Number Drop-Down
-==================================================*/
-var dropDown = $('.country-code');
-var phoneCode = $('.phone-code');
-dropDown.change(function() { 
-	var code=$(this).find('option').filter(':selected').val();
-	$(phoneCode).text(code);
-});
-/*==================================================
-				Phone Number Drop-Down
-==================================================*/
+(function(){
+	var iterateList = [],
+	curr = 0,
+	intervalID,
+	timeoutID;
+	iterateList.push($('.ami'));
+	iterateList.push($('.cancer'));
+	iterateList.push($('.kidney'));
+	iterateList.push($('.stroke'));
+	iterateList.push($('.trauma'));
+	iterateList.push($('.donor'));
+	iterateList.push($('.birth'));
+	//mouseover, kill timerID
+	var mainHeader = $('.link-description').find('.main-header');
+	//mouseout, timerID to 6s
+	timeoutID = setInterval(inActive, 6000);
+	// function timeout() {
+	// intervalID = setInterval(inActive, 6000);
+	// console.log("i am in timeout");
+	//}
 
-/*==================================================
-				Drop-Down
-==================================================*/
-var dropDown2 = $('.dropdown');
-dropDown2.change(function() {    
-    var item=$(this).find('option').filter(':selected').text();
-    var dataRequest=$('div.only-data-request');
-    var nextDiv = $('div.non-data-request');
-    if(item=="Data Request"){
-         nextDiv.slideUp('slow');
-         dataRequest.slideDown('slow'); 
-	}else{
-         dataRequest.slideUp('slow');
-         nextDiv.slideDown('slow');
-         }
-    var checkElement1 = $(this).prev();
-    if(checkElement1.is('span')){
-		$(checkElement1).text(item);
+	function resetActive(){
+        // $(document.body).attr('class', 'active');
+        for(var i = 0; i < iterateList.length; i++) {
+			iterateList[i].removeClass('hover');
+		}
+        clearInterval(timeoutID);
+        timeoutID = setInterval(inActive, 6000);
     }
 
-});
+	function inActive() {
+		var $obj = iterateList[curr];
+		//console.log("enter Inactive");
+		for(var i = 0; i < iterateList.length; i++) {
+			iterateList[i].removeClass('hover');
+		}
+		//console.log("clear the hover class");
 
-/*==================================================
-				Drop-Down
-==================================================*/
+		
+		$obj.addClass('hover');
+		//console.log("add the hover class");
+		var autoLink = $obj.attr('name');
+		mainHeader.text(autoLink).fadeIn(5000);
+
+		$prevObj = $obj.parent();
+		
+		var $sliderx = $('.link-description').find('.desktop-slider');
+		if($prevObj.is(':first-child')===true){	
+			
+			//console.log("first element slide now");
+			$sliderx.bxSlider({}).goToNextSlide();
+		}
+	
+
+		if(curr === iterateList.length - 1) {
+			// console.log("last item");
+		curr = 0;
+		} else {
+		curr++;
+		}
+
+		
+	}
+
+	$(document).bind('mousemove', function(){resetActive();});
+}());
+
+// If theres no activity for 5 seconds do something
+    // var activityTimeout = setTimeout(inActive, 6000);
+    
+    // function resetActive(){
+    //     // $(document.body).attr('class', 'active');
+        
+    //     clearTimeout(activityTimeout);
+    //     activityTimeout = setTimeout(inActive, 6000);
+    // }
+    
+    // function inActive(){
+    //     // $(document.body).attr('class', 'inactive');
+    //     var ami = $(".ami");
+				// setInterval(function(){
+				// ami.toggleClass("ami-hover");
+				// }, 2000);
+    // }
+    
+    // // Check for mousemove, could add other events here such as checking for key presses ect.
+    // $(document).bind('mousemove', function(){resetActive();});
+
 
 /*==================================================
 				Checkbox
@@ -194,27 +234,26 @@ var filter =  /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
 				Search Box
 ==================================================*/
 
-var searchButton = $('.link-description').find('a.search-link');
-var publicationHead = $('.publi-head');
-var searchBox = $('.searchbox');
-var searchBackground = $('.internal-description');
-var close = $('.link-description').find('.close');
-searchButton.on('click',function(){
-	var checkText = $(this).prev().val();
-	if($.trim(checkText) ==='age' || $.trim(checkText) === "Age" || $.trim(checkText) === "AGE"){
-	publicationHead.slideUp('normal');
-	searchBackground.addClass('searchBackground');
-	searchBox.slideDown('slow');
-	}else{
-		alert("Invalid Input");
-	}
-});
-
-close.on('click', function(){	
-	searchBox.slideUp('fast');
-	searchBackground.removeClass('searchBackground');
-	publicationHead.slideDown('normal');
-});
+//var searchButton = $('.link-description').find('a.search-link');
+//var publicationHead = $('.publi-head');
+//var searchBox = $('.searchbox');
+//var searchBackground = $('.internal-description');
+//var close = $('.link-description').find('.close');
+//searchButton.on('click',function(){
+//var checkText = $(this).prev().val();
+//if($.trim(checkText) ==='age' || $.trim(checkText) === "Age" || $.trim(checkText) === "AGE"){
+//publicationHead.slideUp('normal');
+//searchBackground.addClass('searchBackground');
+//searchBox.slideDown('slow');
+//}else{
+//alert("Invalid Input");
+//}
+//});
+//close.on('click', function(){	
+//searchBox.slideUp('fast');
+//searchBackground.removeClass('searchBackground');
+//publicationHead.slideDown('normal');
+//});
 
 
 
@@ -313,10 +352,16 @@ if(parts.length>1){
 			if(parts[1]=='request'){
 			$('.data-inquiry').find('option').removeAttr('selected').filter('[value=request]')
 				.attr('selected', true);
+				var item1 = "Data Request";
+				var presentItem1 = $('.data-inquiry').find('option').attr('selected','selected');
+				changeDropdown(item1, presentItem1);
 			}
 		else if(parts[1]=='general'){
 				$('.data-inquiry').find('option').removeAttr('selected').filter('[value=general]')
 				.attr('selected', true);
+				var item2 = "General";
+				var presentItem2 = $('.data-inquiry').find('option').attr('selected','selected');
+				changeDropdown(item2, presentItem2);
 			}
 
 		}
@@ -324,10 +369,72 @@ if(parts.length>1){
 
 
 /*==================================================
+				Phone Number Drop-Down
+==================================================*/
+var dropDown = $('.country-code');
+var phoneCode = $('.phone-code');
+dropDown.change(function() { 
+	var code=$(this).find('option').filter(':selected').val();
+	$(phoneCode).text(code);
+});
+/*==================================================
+				Phone Number Drop-Down
+==================================================*/
+
+/*==================================================
+				Drop-Down
+==================================================*/
+var dropDown2 = $('.dropdown');
+
+dropDown2.change(function() {    
+    var item=$(this).find('option').filter(':selected').text();
+    var presentItem = $(this);
+    console.log(presentItem);
+    var checkElement1 = presentItem.prev();
+    if(checkElement1.is('span')){
+		$(checkElement1).text(item);
+    }
+
+});
+
+
+var dataDropdown = $('.data-dropdown.data-dropdown');
+var dataRequest=$('div.only-data-request');
+var nextDiv = $('div.non-data-request');
+dataDropdown.change(function() {    
+    var item=$(this).find('option').filter(':selected').text();
+    var presentItem = $(this);
+    changeDropdown(item, presentItem);
+    
+});
+
+function changeDropdown(item, presentItem){
+	
+	if(item=="Data Request"){
+         nextDiv.slideUp('slow');
+         dataRequest.slideDown('slow'); 
+	}else{
+         dataRequest.slideUp('slow');
+         nextDiv.slideDown('slow');
+         }
+
+    var checkElement1 = $('.dropdown-span.data-dropdown-span');
+    if(checkElement1.is('span')){
+		$(checkElement1).text(item);
+	
+    }    
+}
+
+/*==================================================
+				Drop-Down
+==================================================*/
+
+
+/*==================================================
 				IE9 Column
 ==================================================*/
 
-$('.about-main p').columnize({ columns: 2 });
-$('.about-main p').columnize({ width: 340 });
-alert("shit");
+// $('.about-main p').columnize({ columns: 2 });
+// $('.about-main p').columnize({ width: 340 });
+// alert("shit");
 

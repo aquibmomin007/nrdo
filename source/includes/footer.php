@@ -17,7 +17,7 @@
                     <p class="link-title"><a href="/publications/">Publications</a></p>
                     <ul class="link-lists">
                         <li><a href="/publications/ami/">Acute Myocardial Infarction (AMI)</a></li>
-                        <li><a href="#">Cancer</a></li>
+                        <li><a href="/publications/cancer/">Cancer</a></li>
                         <li><a href="#">Chronic Kidney Failure</a></li>
                         <li><a href="#">Stroke</a></li>  
                         <li><a href="#">Trauma</a></li>                                            
@@ -37,10 +37,10 @@
                 <section class="terms-links">
                     <span class="mobile-footer-links"><p class="link-title right"><a href="#">Contact Us</a></p><!--
                  --><p class="link-title left"><a href="#">Feedback</a></p><!-- 
-                 --><p class="link-title right"><a href="#">Sitemap</a></p></span><!-- 
+                 --><p class="link-title right"><a href="/sitemap/">Sitemap</a></p></span><!-- 
                  --><p class="link-title left"><a href="#">Rate this Site</a></p><!--
                  --><p class="link-title right"><a href="#">Terms & Conditions</a></p><!-- 
-                 --><p class="link-title left"><a href="#">Privacy Statements</a></p>            
+                 --><p class="link-title left"><a href="#">Privacy Statement</a></p>            
                 </section>
                 <section class="copy-section">
                     <p class="copyright">© 2014 National Registry of Diseases Office. All Rights Reserved.</p><span>Last Updated on 19 August 2014.</span> 

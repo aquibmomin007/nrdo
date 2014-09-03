@@ -192,7 +192,7 @@ ul{
         font-weight: 300;       
         position:relative;
         
-         width: 60%;
+         width: 70%;
         display: block;
         margin:8px auto 22px;
       }
@@ -218,43 +218,48 @@ ul{
 
    .ami{
       background:url(/assets/img/ami.png)no-repeat;
-      &:hover{background:url(/assets/img/ami-hover.png)no-repeat;}
+      
    }
+
+   .ami.hover, .ami:hover{background:url(/assets/img/ami-hover.png)no-repeat;border: 2px solid #fff; }
 
    .cancer{
     background:url(/assets/img/cancer.png)no-repeat;
-   &:hover {background:url(/assets/img/cancer-hover.png)no-repeat;}
-   }
-   .cancer:hover{}
+    }
+   .cancer.hover, .cancer:hover{background:url(/assets/img/cancer-hover.png)no-repeat;border: 2px solid #fff; }
 
    .kidney{
     background:url(/assets/img/kidney.png)no-repeat;
-    &:hover {background:url(/assets/img/kidney-hover.png)no-repeat;}
    }
+
+   .kidney.hover, .kidney:hover {background:url(/assets/img/kidney-hover.png)no-repeat; border: 2px solid #fff; }
    
 
    .trauma{
     background:url(/assets/img/trauma.png)no-repeat;
-    &:hover {background:url(/assets/img/trauma-hover.png)no-repeat;}
    }
+
+    .trauma.hover, .trauma:hover {background:url(/assets/img/trauma-hover.png)no-repeat; border: 2px solid #fff; }
   
 
    .stroke{
     background:url(/assets/img/stroke.png)no-repeat;
-    &:hover {background:url(/assets/img/stroke-hover.png)no-repeat;}
    }
+
+    .stroke.hover, .stroke:hover {background:url(/assets/img/stroke-hover.png)no-repeat; border: 2px solid #fff; }
 
 
    .donor{
     background:url(/assets/img/donor.png)no-repeat;
-    &:hover {background:url(/assets/img/donor-hover.png)no-repeat;}
    }
   
+  .donor.hover, .donor:hover {background:url(/assets/img/donor-hover.png)no-repeat; border: 2px solid #fff; }
 
    .birth{
     background:url(/assets/img/birth.png)no-repeat;
-    &:hover {background:url(/assets/img/birth-hover.png)no-repeat;}
    }
+
+   .birth.hover, .birth:hover {background:url(/assets/img/birth-hover.png)no-repeat; border: 2px solid #fff; }
    
 
    .container{
@@ -422,6 +427,28 @@ ul{
   /*===========================================================================
                                    Publication
    ========================================================================== */
+
+  .internal-description{
+   ::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #fff;
+    font-style: normal;
+      }
+      :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+          color:    #fff;
+          font-style: normal;
+          
+      }
+      ::-moz-placeholder { /* Mozilla Firefox 19+ */
+          color:    #fff;
+          font-style: normal;
+          
+      }
+      :-ms-input-placeholder { /* Internet Explorer 10+ */
+          color:    #fff;
+          font-style: normal;
+      }
+}
+
 .searchbox{
   display: none;
   color: #fff;
@@ -430,7 +457,7 @@ ul{
 .publication-section{
  display: block;
 position: relative; 
-      min-height: 400px;
+      min-height: 435px;
       color: $dark_blue;
 }
 
@@ -484,7 +511,7 @@ position: relative;
     }
     .publi-date{
       float: left;
-      margin-top: 7px;
+      margin-top: 22px;
         span{
           font-size: 48px;
           font-weight: 400;
@@ -498,7 +525,7 @@ position: relative;
       font-size: 14px;
       font-weight: 500;
       color: #000;
-      padding: 0 50px 0 0;
+      padding: 9px 50px 0 0;
       text-align: justify;
     }
 
@@ -521,10 +548,61 @@ position: relative;
 
     }
 
+
+.publi-head{    
+
+    .publi-main{
+      
+    input[type="text"]{ 
+      font-size: 20px;
+      font-weight:300;       
+      }
+
+      .search-link{
+        background: url(/assets/img/publi-search.png) 100% 75% no-repeat;
+        padding:17px;
+        position: absolute;
+        right: 7px;
+        top: 3px;
+
+      }
+      span{
+        border-top: 1px solid #205372;
+        display:block;
+        font-weight: 300;
+        font-size: 14px; 
+        padding-top: 2px; 
+      }
+   }         
+  }    
+
+
+ .publi-search{      
+      
+    input[type="text"]{
+      color:#fff;     
+       border:none;
+       outline:none; 
+       background: none;        
+      }
+
+      .search-link{
+        background: url(/assets/img/publi-search.png) 100% 75% no-repeat;
+        position: absolute;
+      }
+      span{
+        border-top: 1px solid #205372;
+        display:block;
+        font-weight: 300;
+        font-size: 14px; 
+        padding-top: 2px; 
+      }
+   }  
+
 /* ==========================================================================
    data-enquiry
    ========================================================================== */
-.pdf{p{margin:0;}background:#414040; img{padding: 10px 0;} span{color: #fff; font: 400 italic 14px "Hind"; padding-left:20px;}}
+.pdf{p{margin:0;}background:#414040; img{padding: 10px 0;} span,a{color: #fff; font: 400 italic 14px "Hind";} span{padding-left:20px;} a{text-decoration:underline;}}
 
 .disclaimer{  background: #f7f7f7;p{margin:0;}
   img{padding: 10px 0;}
@@ -536,7 +614,7 @@ position:relative;
 display:block;
 font-size: 18px;
 font-weight: 600;
-color: #8F8F8F;
+color: #000;
 
  ::-webkit-input-placeholder { /* WebKit browsers */
     font-size: 14px;
@@ -570,6 +648,7 @@ color: #8F8F8F;
         border-radius:10px;
         background: url(/assets/img/dropdown-arrow.png) #F7F7F7 97% 50% no-repeat;
         z-index: 0;
+        color: #000;
       }
      }
 
@@ -578,7 +657,7 @@ color: #8F8F8F;
         box-sizing: border-box;
         border: 1px solid #8F8F8F;
         padding: 5px;
-        color: #8F8F8F;
+        color: #000;
         outline: none;
         background: #F7F7F7;
         margin-bottom: 18px;
@@ -728,7 +807,7 @@ background: url(/assets/img/car-left.png) no-repeat 0 -5px !important;
    ========================================================================== */
    .data-publi{
     color:#414040;
-    margin-bottom:20px;
+    margin: 20px 0;
     .data, .date, .type{
       margin: 20px 0 0 0;
     }
@@ -802,7 +881,58 @@ background: url(/assets/img/car-left.png) no-repeat 0 -5px !important;
       
     }
    }
+
+ /* ==========================================================================
+    Sitemap
+   ========================================================================== */
+
+   .sitemap-link{
+        padding-left:40px !important;
+   }
+
    /* ==========================================================================
    Footer
    ========================================================================== */
 
+p.link-title{
+              color: #000;
+              list-style-type: none;
+              font-size: 18px;
+              font-weight:600;
+              margin-top: 0;
+              a{color:#000;}
+                  }
+
+          ul.link-lists{
+                color: #706F73;
+                list-style-type: none;
+                -webkit-padding-start: 0;
+                padding-left: 0;
+                font-size: 14px;
+                font-weight:400;
+                margin-bottom: 0;
+                li{
+                      padding-bottom:10px; 
+                    }
+
+          }
+
+.foot-links{
+              margin:15px  9px 0 5px;
+            //  background:red;
+              width:205px;
+              display: inline-block;
+
+              ul{
+                color: #000;
+                list-style-type: none;
+                -webkit-padding-start: 0;
+                padding-left: 0;
+                font-size: 18px;
+                font-weight:600;
+                margin-top: 0;
+                    li{
+                      padding-bottom:10px; 
+                    }
+              }
+        }          

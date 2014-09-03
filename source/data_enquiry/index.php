@@ -1,6 +1,7 @@
 
 <?php 
     set_include_path($_SERVER['DOCUMENT_ROOT'] . '/includes');
+    $page_title = "Data Enquiry | National Registry of Diseases Office Singapore";
     $primary = 7;
     include('header.php');
     
@@ -327,8 +328,8 @@
                                         <div class="data-row">
                                             <p>Enquiry Type*</p>
                                             <div>
-                                                <span class="dropdown-span">Select enquiry type</span>
-                                                <select class="dropdown" name="select">
+                                                <span class="dropdown-span data-dropdown-span">Select enquiry type</span>
+                                                <select class="dropdown data-dropdown" name="select">
                                                    <!--  <option value="Singapore" selected disabled>Select enquiry type</option>  -->
                                                     <option value="general" >General</option> 
                                                     <option value="Notification">Notification</option>

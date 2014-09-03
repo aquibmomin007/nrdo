@@ -1,6 +1,7 @@
 
 <?php 
     set_include_path($_SERVER['DOCUMENT_ROOT'] . '/includes');
+    $page_title = "About Us | National Registry of Diseases Office Singapore";
     $primary = 2;
     include('header.php');
 ?>
