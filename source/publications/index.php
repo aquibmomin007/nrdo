@@ -47,7 +47,7 @@
             </article><!--
          --><article class="publi-right">
                 <div class="tag">
-                    <a href="/publications/ami/"><span>AMI</span></a>
+                    <a href="/publications/ami/"><img src="/assets/img/ami-tag.png" alt="ami-tag"><span>AMI</span></a>
                 </div>             
                 <div class="publi-date">
                     <h2>September<h2>
@@ -77,7 +77,7 @@
             </article><!--
          --><article class="publi-right">                           
                 <div class="tag">
-                    <span>Cancer</span>
+                    <a href="/publications/cancer/"><img src="/assets/img/ami-tag.png" alt="ami-tag"><span>Cancer</span></a>
                 </div> 
                 <div class="publi-date">
                     <h2>July<h2>
@@ -107,7 +107,7 @@
             </article><!--
          --><article class="publi-right">
                 <div class="tag">
-                    <span>Kidney</span>
+                    <a href="#"><img src="/assets/img/ami-tag.png" alt="ami-tag"><span>Kidney</span></a>
                 </div> 
                 <div class="publi-date">
                     <h2>July<h2>
@@ -137,7 +137,7 @@
             </article><!--
          --><article class="publi-right">
                 <div class="tag">
-                    <span>Stroke</span>
+                    <a href="#"><img src="/assets/img/ami-tag.png" alt="ami-tag"><span>Stroke</span></a>
                 </div> 
                 <div class="publi-date">
                     <h2>August<h2>
@@ -167,7 +167,7 @@
             </article><!--
          --><article class="publi-right">
                 <div class="tag">
-                    <span>Trauma</span>
+                    <a href="#"><img src="/assets/img/ami-tag.png" alt="ami-tag"><span>Trauma</span></a>
                 </div> 
                 <div class="publi-date">
                     <h2>August<h2>

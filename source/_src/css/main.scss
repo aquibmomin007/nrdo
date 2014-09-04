@@ -472,10 +472,11 @@ position: relative;
 }
 
 .tag{
+  position:relative ;
   height: 30px;
-  a{background:url(/assets/img/ami-tag.png)   0% 50% no-repeat; padding:3px 15px 4px;top:0}
+  img{display: inline-block !important; top:0 !important;float:left}
   span{height: 25px;
-      margin: 0 0 0 26px !important;
+      margin: 0 0 0 -2px !important;
       background: #fbc036;
       padding: 5px 15px 0px 3px;
       float: left;
