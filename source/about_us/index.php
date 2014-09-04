@@ -21,10 +21,10 @@
     </div> 
     
     <div class="wrapper clearfix">
-       <section class="about-left">
-        <p>Background</p>
+       <section class="about-left scroll-link">
         <ul>
-            <li><a href="#">Registry Operations</a></li>
+            <li><a href="#" class="scroll-background">Background</a></li>
+            <li><a href="#" class="scroll-resgistry">Registry Operations</a></li>
         </ul>
        </section>  
        <section class="about-right">

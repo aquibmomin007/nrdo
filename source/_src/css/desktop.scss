@@ -137,12 +137,7 @@ ul.link-list{
       }
    }
 
-   .link-list li a{
-    -webkit-transition:0.5s;
-    -moz-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
-   }
+   
 
    .link-list li{
    margin: 49px 28px 0 0;  
@@ -250,10 +245,12 @@ div.main-links{
 
    article.side-content{  
     max-width: 230px;
+    max-height: 174px;
     div.side-data{
      
      h3.side-heading{
-           font-size: 21px;
+      font-weight: 600;
+           font-size: 18px;
            margin: 0 10px 7px 20px;
          }
         p{
@@ -292,7 +289,9 @@ span.side-button{
                 padding:10px;
               }
               h3{padding:0 10px;
-              font-size: 16px;
+              font-size: 18px;
+              height: 44px;
+              overflow: hidden;
             }
         }
   }
@@ -303,7 +302,7 @@ span.side-button{
   .internal-description{
     background: url(/assets/img/publication-banner.png)no-repeat;
    min-height:160px !important;
-   h1{padding: 40px 0 5px 5px;}   
+   h1{padding: 29px 0 5px 5px;}   
   }
 
 

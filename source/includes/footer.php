@@ -28,10 +28,10 @@
                         <a href="#">Disease Notifications</a>
                     </p>
                     <ul class="link-lists">
+                        <li><a href="#">Acute Myocardial Infarction Notification</a></li> 
                         <li><a href="#">Cancer Registry Notification</a></li>
-                        <li><a href="#">Donor Care Registry Notification</a></li>
                         <li><a href="#">Chronic Kidney Failure Notification</a></li>
-                        <li><a href="#">Acute Myocardial Infarction Notification</a></li>                                        
+                        <li><a href="#">Donor Care Registry Notification</a></li>                                     
                      </ul> 
                 </section>                
                 <section class="terms-links">
@@ -39,7 +39,7 @@
                  --><p class="link-title left"><a href="#">Feedback</a></p><!-- 
                  --><p class="link-title right"><a href="/sitemap/">Sitemap</a></p></span><!-- 
                  --><p class="link-title left"><a href="#">Rate this Site</a></p><!--
-                 --><p class="link-title right"><a href="#">Terms & Conditions</a></p><!-- 
+                 --><p class="link-title right"><a href="#">Terms of Use</a></p><!-- 
                  --><p class="link-title left"><a href="#">Privacy Statement</a></p>            
                 </section>
                 <section class="copy-section">
@@ -54,6 +54,7 @@
         <script src="/assets/js/main.js"></script>
         <script src="/assets/js/plugins.js"></script>
         <script src="/assets/js/vendor/modernizr-2.8.0.min.js"></script>
+        <script src="/assets/js/scrollto.min.js"></script> 
         <script src="/assets/js/jquery.columnizer.js"></script>
         <script src="/assets/js/jquery.bxslider.min.js"></script>       
 

@@ -123,12 +123,6 @@
     ul.link-list div:last-of-type {
       text-align: center; }
 
-  .link-list li a {
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s; }
-
   .link-list li {
     margin: 49px 28px 0 0; }
 
@@ -210,9 +204,11 @@
     display: block; }
 
   article.side-content {
-    max-width: 230px; }
+    max-width: 230px;
+    max-height: 174px; }
     article.side-content div.side-data h3.side-heading {
-      font-size: 21px;
+      font-weight: 600;
+      font-size: 18px;
       margin: 0 10px 7px 20px; }
     article.side-content div.side-data p {
       margin: 8px 20px 20px 20px;
@@ -239,7 +235,9 @@
       padding: 10px; }
     section.left-container article.publication h3 {
       padding: 0 10px;
-      font-size: 16px; }
+      font-size: 18px;
+      height: 44px;
+      overflow: hidden; }
 
   .searchBackground {
     background: #023456 !important; }
@@ -248,7 +246,7 @@
     background: url(/assets/img/publication-banner.png) no-repeat;
     min-height: 160px !important; }
     .internal-description h1 {
-      padding: 40px 0 5px 5px; }
+      padding: 29px 0 5px 5px; }
 
   ul.breadcrumb {
     font-size: 12px;

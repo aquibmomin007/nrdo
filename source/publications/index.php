@@ -16,7 +16,7 @@
             </form>                      
         </div>        
         <div class="wrapper publi-head">
-            <h1>Publications</h1>
+            <h1>Latest Registries Publications</h1>
             <p>Fusce ultrices rutrum velit eget feugiat. Quisque nisl magna, vehicula et lacus sed, tempus tincidunt nunc. </p>
             <form> 
                 <div class="publi-search publi-main">
@@ -47,7 +47,7 @@
             </article><!--
          --><article class="publi-right">
                 <div class="tag">
-                    <span>AMI</span>
+                    <a href="/publications/ami/"><span>AMI</span></a>
                 </div>             
                 <div class="publi-date">
                     <h2>September<h2>

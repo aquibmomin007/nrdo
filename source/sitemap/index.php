@@ -54,10 +54,10 @@
                         <li><a href="#">Legislation</a></li>
                         <li><a href="#">Diseases Notification</a>
                             <ul class="sitemap-link">
-                                <li><a href="#">Cancer Registry Notification</a></li>
-                                <li><a href="#">Donor Care Registry Notification</a></li>
-                                <li><a href="#">Chronic Kidney Failure Notification</a></li>
                                 <li><a href="#">Acute Myocardial Infarction Notification</a></li> 
+                                <li><a href="#">Cancer Registry Notification</a></li>
+                                <li><a href="#">Chronic Kidney Failure Notification</a></li>
+                                <li><a href="#">Donor Care Registry Notification</a></li>  
                             </ul>    
                         </li>
                         <li><a href="data_enquiry">Data Request</a>
@@ -66,7 +66,7 @@
                             </ul> 
                         </li>
                         <li><a href="#">Contact Info</a></li>
-                        <li><a href="#">Terms & Condition</a></li>
+                        <li><a href="#">Terms of Use</a></li>
                         <li><a href="#">Privacy Statement</a></li>
                         
                     </ul>

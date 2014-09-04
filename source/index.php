@@ -67,7 +67,7 @@
                                                 <img src="assets/img/data-e.png" alt="Data Enquiry">
                                                 <div class="side-data">
                                                     <h3 class="side-heading">Data Enquiry Form</h3>
-                                                    <p>Vivamus condimentum gravida orci, a tinci dunt mau ris hendre rit at. </p>
+                                                    <p>Vivamus condimentum gravida orci, a tinci dunt mau ris hendre </p>
                                                     <span class="side-button"> <a href="/data_enquiry/">Enquire</a></span>
                                                 </div>
                                             </article>
@@ -75,7 +75,7 @@
                                                 <img src="assets/img/data-r.png" alt="Data Request">
                                                 <div class="side-data">
                                                     <h3 class="side-heading">Check Data Request Status</h3>
-                                                    <p>Vivamus condimentum gravida orci, a tinci dunt mau ris hendre rit at. </p>
+                                                    <p>Vivamus condimentum gravida orci, a tinci dunt mau ris hendre</p>
                                                     <div class="track"><input type="text" placeholder="your tracking id" /><a href="#"></a></div> 
                                                 </div>
                                             </article>
@@ -83,7 +83,7 @@
                                                 <img src="assets/img/disease-n.png" alt="Disease Notification">
                                                 <div class="side-data">
                                                     <h3 class="side-heading">Disease <br />e-Notification Login</h3>
-                                                    <p>Vivamus condimentum gravida orci, a tinci dunt mau ris hendre rit at. </p>
+                                                    <p>Vivamus condimentum gravida orci, a tinci dunt mau ris hendre </p>
                                                     <span class="side-button"><a href="#">Login Now</a></span>
                                                 </div>
                                             </article>
@@ -91,7 +91,7 @@
                                                 <img src="assets/img/health-p.png" alt="Health Portal">
                                                 <div class="side-data">
                                                     <h3 class="side-heading">Health Professional Portal Login</h3>
-                                                    <p>Vivamus condimentum gravida orci, a tinci dunt mau ris hendre rit at. </p>
+                                                    <p>Vivamus condimentum gravida orci, a tinci dunt mau ris hendre</p>
                                                     <span class="side-button"><a href="#">Login Now</a></span>
                                                 </div>
                                             </article>

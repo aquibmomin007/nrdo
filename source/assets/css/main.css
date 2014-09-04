@@ -390,50 +390,43 @@ ul {
   background: url(/assets/img/ami.png) no-repeat; }
 
 .ami.hover, .ami:hover {
-  background: url(/assets/img/ami-hover.png) no-repeat;
-  border: 2px solid #fff; }
+  background: url(/assets/img/ami-hover.png) #fbc036 no-repeat; }
 
 .cancer {
   background: url(/assets/img/cancer.png) no-repeat; }
 
 .cancer.hover, .cancer:hover {
-  background: url(/assets/img/cancer-hover.png) no-repeat;
-  border: 2px solid #fff; }
+  background: url(/assets/img/cancer-hover.png) #fbc036 no-repeat; }
 
 .kidney {
   background: url(/assets/img/kidney.png) no-repeat; }
 
 .kidney.hover, .kidney:hover {
-  background: url(/assets/img/kidney-hover.png) no-repeat;
-  border: 2px solid #fff; }
+  background: url(/assets/img/kidney-hover.png) #fbc036 no-repeat; }
 
 .trauma {
   background: url(/assets/img/trauma.png) no-repeat; }
 
 .trauma.hover, .trauma:hover {
-  background: url(/assets/img/trauma-hover.png) no-repeat;
-  border: 2px solid #fff; }
+  background: url(/assets/img/trauma-hover.png) #fbc036 no-repeat; }
 
 .stroke {
   background: url(/assets/img/stroke.png) no-repeat; }
 
 .stroke.hover, .stroke:hover {
-  background: url(/assets/img/stroke-hover.png) no-repeat;
-  border: 2px solid #fff; }
+  background: url(/assets/img/stroke-hover.png) #fbc036 no-repeat; }
 
 .donor {
   background: url(/assets/img/donor.png) no-repeat; }
 
 .donor.hover, .donor:hover {
-  background: url(/assets/img/donor-hover.png) no-repeat;
-  border: 2px solid #fff; }
+  background: url(/assets/img/donor-hover.png) #fbc036 no-repeat; }
 
 .birth {
   background: url(/assets/img/birth.png) no-repeat; }
 
 .birth.hover, .birth:hover {
-  background: url(/assets/img/birth-hover.png) no-repeat;
-  border: 2px solid #fff; }
+  background: url(/assets/img/birth-hover.png) #fbc036 no-repeat; }
 
 .container {
   display: block;
@@ -485,7 +478,7 @@ ul {
   display: inline-block;
   min-height: 50px;
   border-radius: 5px;
-  margin-top: 20px;
+  margin-top: 18px;
   margin-left: 5px; }
   .view-more a {
     position: relative;
@@ -503,7 +496,7 @@ ul {
 
 .main-body {
   position: relative;
-  min-height: 770px; }
+  min-height: 650px; }
 
 .right-container {
   font-family: "Hind"; }
@@ -514,7 +507,7 @@ ul {
   position: relative; }
   .side-content .side-data {
     position: absolute;
-    top: 20px; }
+    top: 15px; }
     .side-content .side-data .side-heading {
       font-weight: 400;
       color: #000;
@@ -596,8 +589,11 @@ ul {
   padding: 30px 0 15px 0; }
 
 .tag {
-  height: 30px;
-  background: url(/assets/img/ami-tag.png) 0% 50% no-repeat; }
+  height: 30px; }
+  .tag a {
+    background: url(/assets/img/ami-tag.png) 0% 50% no-repeat;
+    padding: 3px 15px 4px;
+    top: 0; }
   .tag span {
     height: 25px;
     margin: 0 0 0 26px !important;
@@ -983,3 +979,5 @@ ul.link-lists {
     margin-top: 0; }
     .foot-links ul li {
       padding-bottom: 10px; }
+    .foot-links ul a {
+      color: #000; }

@@ -134,7 +134,7 @@ if ($(window).width() < 580){
 		if($prevObj.is(':first-child')===true){	
 			
 			//console.log("first element slide now");
-			$sliderx.bxSlider({}).goToNextSlide();
+			$sliderx.goToNextSlide();
 		}
 	
 
@@ -426,8 +426,20 @@ function changeDropdown(item, presentItem){
 }
 
 /*==================================================
-				Drop-Down
+				Scrooll To
 ==================================================*/
+var $aboutLink = $('.scroll-link').find('ul li');
+
+
+$aboutLink.on('click', function(){
+	var linkIndex = $(this).index();
+	var scrollLink = $('.about-main:nth-child('+(linkIndex+1)+')').find("h2");
+	
+	$('body').scrollTo(scrollLink, {duration:1000});
+	
+});
+
+
 
 
 /*==================================================

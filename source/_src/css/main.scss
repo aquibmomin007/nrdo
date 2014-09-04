@@ -221,45 +221,45 @@ ul{
       
    }
 
-   .ami.hover, .ami:hover{background:url(/assets/img/ami-hover.png)no-repeat;border: 2px solid #fff; }
+   .ami.hover, .ami:hover{background:url(/assets/img/ami-hover.png) #fbc036 no-repeat;  }
 
    .cancer{
     background:url(/assets/img/cancer.png)no-repeat;
     }
-   .cancer.hover, .cancer:hover{background:url(/assets/img/cancer-hover.png)no-repeat;border: 2px solid #fff; }
+   .cancer.hover, .cancer:hover{background:url(/assets/img/cancer-hover.png) #fbc036 no-repeat; }
 
    .kidney{
     background:url(/assets/img/kidney.png)no-repeat;
    }
 
-   .kidney.hover, .kidney:hover {background:url(/assets/img/kidney-hover.png)no-repeat; border: 2px solid #fff; }
+   .kidney.hover, .kidney:hover {background:url(/assets/img/kidney-hover.png) #fbc036 no-repeat; }
    
 
    .trauma{
     background:url(/assets/img/trauma.png)no-repeat;
    }
 
-    .trauma.hover, .trauma:hover {background:url(/assets/img/trauma-hover.png)no-repeat; border: 2px solid #fff; }
+    .trauma.hover, .trauma:hover {background:url(/assets/img/trauma-hover.png) #fbc036 no-repeat;  }
   
 
    .stroke{
     background:url(/assets/img/stroke.png)no-repeat;
    }
 
-    .stroke.hover, .stroke:hover {background:url(/assets/img/stroke-hover.png)no-repeat; border: 2px solid #fff; }
+    .stroke.hover, .stroke:hover {background:url(/assets/img/stroke-hover.png) #fbc036 no-repeat;  }
 
 
    .donor{
     background:url(/assets/img/donor.png)no-repeat;
    }
   
-  .donor.hover, .donor:hover {background:url(/assets/img/donor-hover.png)no-repeat; border: 2px solid #fff; }
+  .donor.hover, .donor:hover {background:url(/assets/img/donor-hover.png) #fbc036 no-repeat;  }
 
    .birth{
     background:url(/assets/img/birth.png)no-repeat;
    }
 
-   .birth.hover, .birth:hover {background:url(/assets/img/birth-hover.png)no-repeat; border: 2px solid #fff; }
+   .birth.hover, .birth:hover {background:url(/assets/img/birth-hover.png) #fbc036 no-repeat;  }
    
 
    .container{
@@ -328,7 +328,7 @@ ul{
               display: inline-block;
               min-height: 50px;
               border-radius: 5px;
-              margin-top: 20px;
+              margin-top: 18px;
               margin-left: 5px;
               a{
                 position: relative;
@@ -347,7 +347,7 @@ ul{
               }
             }
 
- .main-body{position:relative;min-height:770px;}
+ .main-body{position:relative;min-height:650px;}
 
  .right-container{font-family: "Hind";}
  .side-content{
@@ -358,7 +358,7 @@ ul{
 
        .side-data{ 
         position:absolute;
-                top:20px;
+                top:15px;
               .side-heading{
                
                 font-weight:400;
@@ -473,7 +473,7 @@ position: relative;
 
 .tag{
   height: 30px;
-  background:url(/assets/img/ami-tag.png)   0% 50% no-repeat;
+  a{background:url(/assets/img/ami-tag.png)   0% 50% no-repeat; padding:3px 15px 4px;top:0}
   span{height: 25px;
       margin: 0 0 0 26px !important;
       background: #fbc036;
@@ -934,5 +934,6 @@ p.link-title{
                     li{
                       padding-bottom:10px; 
                     }
+                    a{color:#000;}
               }
         }          
